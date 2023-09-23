@@ -1,9 +1,172 @@
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100%;
 }
-/* .App .app-header{
-  width:
-}
-.App .app-body-items{
 
-} */
+.App .app-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+.App .app-header .header-items {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.App .app-header .header-items .logo {
+  flex: 1;
+}
+
+.App .app-header .header-items .app-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.App .app-header .header-items .app-search  input{
+  width: 540px;
+  height: 35px;
+  border-radius: 50px;
+  border: solid 1px #000;
+  outline: none;
+  padding: 0 20px;
+}
+
+.App .app-header .header-items .action-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+.App .app-header .header-items .action-button button{
+  width: 85px;
+  height: 30px;
+  background: #fff;
+  border: solid 1px #000;
+  border-radius: 50px;
+  cursor: pointer;
+  color: lightblue;
+}
+
+.App .app-header .logo {
+  margin: 10px;
+}
+
+.App .app-header img {
+  width: 156px;
+  height: 56px;
+}
+
+.App .app-body-items {
+  display: flex;
+  margin: 30px 20px;
+}
+
+.App .app-body-items .app-sidebar {
+  display: flex;
+  flex: 0.4;
+  height: 550px;
+  overflow-y: scroll;
+}
+
+.App .app-body-items .app-sidebar .app-sidebar-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
+
+.App .app-body-items .app-sidebar .app-sidebar-body .app-sidebar-item{
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.App .app-body-items .app-sidebar .app-sidebar-body .active{
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.App .app-body-items .app-dashboard {
+  display: flex;
+  flex: 2;
+}
+
+.App .app-body-items .app-dashboard .app-dashboard-body{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-dashboard-filters {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-dashboard-filters .filter-item {
+  padding: 0 15px;
+  cursor: pointer;
+}
+.App .app-body-items .app-dashboard .app-dashboard-body .app-dashboard-filters .filter-item p {
+  padding: 3px 0;
+  margin: 0;
+}
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-dashboard-filters .active {
+  padding: 0 15px;
+  background: rgba(0, 0, 0, 0.2);
+  height: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-videos-dashboard { 
+  display: flex;
+  width: 100%;
+}
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-videos-dashboard .video-items {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-videos-dashboard .video-items .item{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-videos-dashboard .video-items .item .video-placeholder{
+  background: gray;
+  width: 330px;
+  height: 200px;
+  border-radius: 10px;
+} 
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-videos-dashboard .video-items .item .video-info{
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+} 
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-videos-dashboard .video-items .item .video-info h1{
+  font-size: 20px;
+  margin: 0;
+  padding: 3px 0;
+}
+
+.App .app-body-items .app-dashboard .app-dashboard-body .app-videos-dashboard .video-items .item .video-info p {
+  font-size: 14px;
+  color: gray;
+  padding: 0;
+  margin: 0; 
+}

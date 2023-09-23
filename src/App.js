@@ -1,11 +1,17 @@
-import './App.css';
-import AppDashboard from "./dashboard"
-import AppHeader from "./header"
+import AppHeader from "./components/header";
+import AppSidebar from "./components/sidebar";
+import AppDashboard from "./components/dashboard";
+
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
-      <AppDashboard />
       <AppHeader />
+      <div className="app-body-items">
+        <AppSidebar />
+        <AppDashboard />
+      </div>
     </div>
   );
 }
